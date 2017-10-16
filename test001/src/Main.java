@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main {
 
@@ -76,6 +77,7 @@ public class Main {
 		{
 			System.out.println("Juana!!!");
 		}*/
+		/*
 		//Bloque de palacio de fierro
 		if(x == az)
 		{
@@ -100,8 +102,62 @@ public class Main {
 		else
 		{
 			System.out.println("Ni modo!!!");
-		}
+		}*/
 		
+		System.out.println("\n");
+		
+		/*System.out.println("Escribe un nombre : ");		
+		String opcion ="Chana";
+		Scanner lector = new Scanner(System.in); //Crea un objeto para escribir en el y que la maquina lo lea		
+		opcion = lector.nextLine();//le dice a opcion el valor que se escriba 
+		
+		switch(opcion)
+		{
+		case "Chana":
+		System.out.println("Chana!!");
+		break;
+		case "Juana":
+			System.out.println("Juana!!");
+			break;
+		case "Chona":
+			System.out.println("Chona!!");
+			break;
+			default:
+				System.out.println("Ninguno!!");
+				break;
+		}*/
+		
+		// loops //////////////  equals  // for each // While  //////////////////////////
+		
+		/*String cadena5 = "Hola";
+		
+		if(cadena5.equals("Hola "))//compara variables para ver si son iguales
+		{
+			System.out.println("Son iguales!!");
+		}
+		else
+		{
+			System.out.println("No son iguales!!");
+		}*/
+		
+		//For each
+		/*
+		for(String i:meses)
+		{		
+		System.out.print(i);
+		}
+		*/
+		/*
+		int contador = 0;
+		while (contador < meses.length)
+		{
+			System.out.println((contador+1)+" : "+meses[contador]);
+			contador++;
+		}
+		*/
+		
+		CuentaPalabras cP1b = new CuentaPalabras(7);
+		cP1b.cuentaLetras();
 		
 		
 		
