@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("#####");
+		//System.out.println("#####");
 		
 		int a  = 1;
 		int b = 81;
@@ -101,23 +101,6 @@ public class Main {
 		{
 			System.out.println("Ni modo!!!");
 		}
-		
-		
-		System.out.println("\n\n");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//Float flotante = 0.0f;
-		
-		
 		
 		
 		
