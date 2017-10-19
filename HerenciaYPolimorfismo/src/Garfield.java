@@ -1,11 +1,16 @@
 
 public class Garfield extends Animal
 {
-	String nombre;
+	
 	
 	public Garfield()
 	{
-		nombre="Garfield";
+		super ("");
+	}
+	
+	public Garfield(String nombre)
+	{
+		super (nombre);
 	}
 	
 	public void comer (String comida)

@@ -1,6 +1,6 @@
 package lasAves;
 
-public class Colibri extends Pequeñas{
+public class Colibri extends Pequenas{
 	
 	public Colibri()
 	{
