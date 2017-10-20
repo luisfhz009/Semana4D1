@@ -125,7 +125,7 @@ public class Main {
 		}*/
 		
 		//////////////////////////////////   VECTOR
-		Vector <Frutas>miVector = new Vector(100);
+		Vector <Frutas>miVector = new Vector<Frutas>(100);
 		miVector.add(sandiaM);
 		miVector.add(bananaM);
 		
@@ -135,7 +135,48 @@ public class Main {
 		{
 			System.out.println("Fruta : "+en.nextElement().getExpiracion());
 		}
+		///////////////////////
+		Vector <Banana> vectorB = new Vector<Banana>(35);
+				
+		for(int x = 0; x < 35;x++)
+		{
+			vectorB.add(bananaM);
+		}
 		
+		Enumeration<Banana> ne = vectorB.elements();
+		
+		while(ne.hasMoreElements())
+		{
+			System.out.println("Banana : "+ne.nextElement().getExpiracion());
+		}
+		///////////////////////
+		Vector <Sandia> vectorS = new Vector<Sandia>(26);
+			
+		for(int x = 0; x < 26;x++)
+		{
+		vectorS.add(sandiaM);
+		}
+		
+		Enumeration<Sandia> el = vectorS.elements();
+		
+		while(el.hasMoreElements())
+		{
+		System.out.println("Sandia : "+el.nextElement().getExpiracion());
+		}
+		///////////////////////
+		Vector <Papaya> vectorP = new Vector<Papaya>(18);
+		
+		for(int x = 0; x < 18;x++)
+		{
+		vectorP.add(papayaM);
+		}
+		
+		Enumeration<Papaya> la = vectorP.elements();
+		
+		while(la.hasMoreElements())
+		{
+		System.out.println("Papaya : "+la.nextElement().getExpiracion());
+		}
 	
 
 	}
