@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.Vector;
 
 public class Main {
 
@@ -12,13 +16,37 @@ public class Main {
 		Papaya papayaM = new Papaya();		
 		papayaM.setExpiracion(5);
 		papayaM.setColor("Naranja");
-		
+				
 		Sandia sandiaM= new Sandia();		
 		sandiaM.setExpiracion(7);
 		sandiaM.setExpiracion(7);
 		
 		Banana bananaM = new Banana();		
 		bananaM.setExpiracion(3);
+		
+		ArrayList <Papaya> listaPapaya = new ArrayList<Papaya>();
+		listaPapaya.add(papayaM);
+		
+		for(int x = 0; x < 1000;x++)
+		{
+			listaPapaya.add(papayaM);
+		}
+		
+		listaPapaya.remove(999);
+		listaPapaya.get(999).getSemillas();
+		
+		/*for(int x = 0; x < listaPapaya.size();x++)
+		{
+			System.err.println(listaPapaya.get(x).getExpiracion());
+		}*/
+				
+		//lista de Frutas		
+		ArrayList <Frutas> listaFrutas = new ArrayList<Frutas>();
+		listaFrutas.add(bananaM);
+		listaFrutas.add(papayaM);
+		listaFrutas.add(sandiaM);
+		
+		
 		
 		Papaya[] lasPapayas = new Papaya[4];
 		Sandia[] lasSandias = new Sandia[5];
@@ -27,21 +55,17 @@ public class Main {
 		for(int x=0; x<lasPapayas.length;x++)
 		{
 			lasPapayas[x]= papayaM;
-		}
-		
+		}		
 		for(int y=0; y<lasSandias.length; y++)
 		{
 			lasSandias[y]=sandiaM;
 		}
-		
 		for(int z=0; z<lasBananas.length; z++)
 		{
-			lasBananas[z]=bananaM;
-			
+			lasBananas[z]=bananaM;	
 		}
 			
-		//Usamos el objeto de CajaFrutas que ya declaramos arriba
-		
+		//Usamos el objeto de CajaFrutas que ya declaramos arriba		
 		cajaFruts.bananas=lasBananas;
 		cajaFruts.papayas=lasPapayas;
 		cajaFruts.sandias=lasSandias;
@@ -51,8 +75,7 @@ public class Main {
 		refri.getCajaFruta().mostrarFrutas();
 		
 		////////////////////////////////////////////////////         VERDURAS     /////////////////////////////////////////////////////		
-		CajaVerduras cajaVerds =new CajaVerduras();
-		
+		CajaVerduras cajaVerds =new CajaVerduras();		
 		
 		Zanahoria zanahoriaM = new Zanahoria();
 		zanahoriaM.setColor("Rojo");
@@ -70,17 +93,14 @@ public class Main {
 		for(int x=0; x<lasZanahorias.length;x++)
 		{
 			lasZanahorias[x]= zanahoriaM;
-		}
-		
+		}		
 		for(int y=0; y<lasCalabazas.length; y++)
 		{
 			lasCalabazas[y]=calabazaM;
-		}
-		
+		}		
 		for(int z=0; z<lasPapas.length; z++)
 		{
-			lasPapas[z]=papaM;
-			
+			lasPapas[z]=papaM;			
 		}
 		
 		cajaVerds.zanahorias=lasZanahorias;
@@ -92,10 +112,31 @@ public class Main {
 		refri.getCajaVerdura().mostrarVerduras();
 		
 		
+		System.out.println("Tamaño de listaPapaya: "+listaPapaya.size());
 		
+		System.out.println("\n");
 		
+		//////////////////////////////////    ITERATOR
+		/*Iterator<Papaya> itr = listaPapaya.iterator();
 		
+		while(itr.hasNext())
+		{
+			System.err.println(itr.next().getExpiracion());
+		}*/
 		
+		//////////////////////////////////   VECTOR
+		Vector <Frutas>miVector = new Vector(100);
+		miVector.add(sandiaM);
+		miVector.add(bananaM);
+		
+		Enumeration<Frutas> en = miVector.elements();
+		
+		while(en.hasMoreElements())
+		{
+			System.out.println("Fruta : "+en.nextElement().getExpiracion());
+		}
+		
+	
 
 	}
 

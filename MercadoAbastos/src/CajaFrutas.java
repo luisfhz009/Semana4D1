@@ -14,22 +14,21 @@ public class CajaFrutas
 	{
 		for(int i = 0; i<papayas.length;i++) 
 		{	
-		System.out.println(papayas[i].getExpiracion());
-		System.out.println(papayas[i].getColor());
+		System.out.println("Papaya expira en: "+papayas[i].getExpiracion());
 		}
 		
 		System.out.println("\n");
 		
 		for(int y = 0; y<sandias.length;y++) 
 		{		
-		System.out.println(sandias[y].getExpiracion());	
+		System.out.println("Sandia expira en: "+sandias[y].getExpiracion());	
 		}
 		
         System.out.println("\n");
 		
 		for(int z = 0; z<bananas.length;z++) 
 		{		
-		System.out.println(bananas[z].getExpiracion());	
+		System.out.println("Banana expira en: "+bananas[z].getExpiracion());	
 		}
 	}
 }

@@ -1,11 +1,13 @@
 
-public class Refrigerador 
+public class Refrigerador implements Clavija
 {
 	private int temperatura;
 	
 	private CajaFrutas cajaFruta;
 	
 	private CajaVerduras cajaVerdura;	
+	
+	int voltaje;
 	
 	public Refrigerador()
 	{
@@ -42,7 +44,12 @@ public class Refrigerador
 	{
 		this.cajaVerdura = cajaVerdura;
 	}
-
+	
+	@Override
+	public void conectarse()
+	{
+		voltaje= 220;
+	}
 
 
 	

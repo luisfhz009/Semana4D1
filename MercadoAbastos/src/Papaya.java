@@ -16,4 +16,10 @@ public class Papaya extends Frutas
 		this.semillas = sem;
 	}
 
+	@Override
+	void descomponer() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

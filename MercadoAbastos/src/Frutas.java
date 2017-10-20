@@ -1,5 +1,5 @@
 
-public class Frutas 
+abstract class Frutas 
 {
 	private String color;
 	private int expiracion;
@@ -33,6 +33,8 @@ public class Frutas
 	public void setTamano(String tamano) {
 		this.tamano = tamano;
 	}
+	
+	abstract void descomponer();
 	
 	
 
