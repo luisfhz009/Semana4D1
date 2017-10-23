@@ -9,7 +9,8 @@ public class Licuadora implements Clavija
 		otroVoltaje = voltaje;
 		System.out.println();
 	}
-	
+
+
 	
 
 }
